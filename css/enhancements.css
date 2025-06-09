@@ -1,0 +1,238 @@
+# Estilos adicionais para validação de formulário
+
+/* Form Validation Styles */
+.form-control.error {
+  border-color: #ff4757;
+  box-shadow: 0 0 10px rgba(255, 71, 87, 0.3);
+}
+
+.form-control.success {
+  border-color: #2ed573;
+  box-shadow: 0 0 10px rgba(46, 213, 115, 0.3);
+}
+
+.error-message {
+  color: #ff4757;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  display: block;
+}
+
+.form-response {
+  padding: 15px;
+  border-radius: var(--borda-radius-pequeno);
+  margin-top: var(--espacamento-medio);
+  font-weight: 500;
+}
+
+.form-response.success {
+  background: rgba(46, 213, 115, 0.1);
+  border: 1px solid rgba(46, 213, 115, 0.3);
+  color: #2ed573;
+}
+
+.form-response.error {
+  background: rgba(255, 71, 87, 0.1);
+  border: 1px solid rgba(255, 71, 87, 0.3);
+  color: #ff4757;
+}
+
+/* Modal Styles Enhancement */
+.modal-header {
+  margin-bottom: var(--espacamento-medio);
+  padding-bottom: var(--espacamento-medio);
+  border-bottom: 1px solid rgba(58, 123, 213, 0.2);
+}
+
+.modal-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.modal-category {
+  color: var(--ciano-brilhante);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.modal-body {
+  display: grid;
+  gap: var(--espacamento-grande);
+}
+
+.modal-image {
+  border-radius: var(--borda-radius-medio);
+  overflow: hidden;
+}
+
+.modal-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.modal-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--cinza-claro);
+}
+
+.modal-details {
+  background: rgba(5, 10, 20, 0.5);
+  padding: var(--espacamento-grande);
+  border-radius: var(--borda-radius-medio);
+  border: 1px solid rgba(58, 123, 213, 0.2);
+}
+
+.modal-details h4 {
+  margin-bottom: var(--espacamento-medio);
+  color: var(--ciano-brilhante);
+}
+
+.modal-details ul {
+  list-style: none;
+}
+
+.modal-details li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(58, 123, 213, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-details li:last-child {
+  border-bottom: none;
+}
+
+.modal-details strong {
+  color: var(--branco);
+}
+
+/* Loading Animation */
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--branco);
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 10px;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--gradiente-futurista);
+  z-index: 9999;
+  transition: width 0.1s ease;
+}
+
+/* Custom Cursor */
+.cursor-trail {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--ciano-brilhante);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease;
+  opacity: 0.7;
+}
+
+/* Reveal Animation Classes */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger Animation Classes */
+.stagger-container .stagger-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.stagger-container .stagger-item.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Counter Animation */
+.counter {
+  font-family: var(--fonte-titulos);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--ciano-brilhante);
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+}
+
+/* Glow on Hover Effect */
+.glow-on-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-on-hover::before {
+  content: '';
+  position: absolute;
+  top: var(--y, 50%);
+  left: var(--x, 50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 229, 255, 0.3) 0%, transparent 70%);
+  transition: width 0.3s ease, height 0.3s ease;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.glow-on-hover:hover::before {
+  width: 200px;
+  height: 200px;
+}
+
+/* Tilt Effect */
+.tilt-effect {
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+/* Parallax Elements */
+.parallax {
+  will-change: transform;
+}
+
+/* Print Styles */
+@media print {
+  .header,
+  .footer,
+  .back-to-top,
+  .preloader,
+  .modal {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .section-title,
+  .hero-title {
+    color: black !important;
+  }
+}
+

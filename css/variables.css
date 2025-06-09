@@ -1,0 +1,54 @@
+:root {
+  /* Cores Principais */
+  --azul-escuro: #0B1E3F;
+  --azul-medio: #1A4B8C;
+  --azul-claro: #3A7BD5;
+  
+  /* Ciano */
+  --ciano-brilhante: #00E5FF;
+  --ciano-suave: #80FFFF;
+  
+  /* Neutros */
+  --preto-azulado: #050A14;
+  --cinza-escuro: #1E2A3A;
+  --cinza-claro: #A7B6C8;
+  --branco: #FFFFFF;
+  
+  /* Acentos */
+  --laranja: #FF7B00;
+  --dourado: #FFD700;
+  
+  /* Gradientes */
+  --gradiente-principal: linear-gradient(135deg, #050A14 0%, #0B1E3F 100%);
+  --gradiente-destaque: linear-gradient(135deg, #1A4B8C 0%, #3A7BD5 100%);
+  --gradiente-futurista: linear-gradient(135deg, #00E5FF 0%, #3A7BD5 100%);
+  --gradiente-cta: linear-gradient(135deg, #FF7B00 0%, #FFD700 100%);
+
+  /* Fontes */
+  --fonte-principal: 'Poppins', sans-serif;
+  --fonte-titulos: 'Orbitron', sans-serif;
+  --fonte-corpo: 'Roboto', sans-serif;
+
+  /* Espaçamentos */
+  --espacamento-pequeno: 0.5rem;
+  --espacamento-medio: 1rem;
+  --espacamento-grande: 2rem;
+  --espacamento-extra: 4rem;
+
+  /* Bordas */
+  --borda-radius-pequeno: 4px;
+  --borda-radius-medio: 8px;
+  --borda-radius-grande: 16px;
+
+  /* Sombras */
+  --sombra-suave: 0 4px 6px rgba(5, 10, 20, 0.1);
+  --sombra-media: 0 8px 15px rgba(5, 10, 20, 0.2);
+  --sombra-forte: 0 12px 28px rgba(5, 10, 20, 0.3);
+  --sombra-neon: 0 0 15px rgba(0, 229, 255, 0.5);
+
+  /* Transições */
+  --transicao-rapida: 0.2s ease;
+  --transicao-media: 0.3s ease;
+  --transicao-lenta: 0.5s ease;
+}
+
